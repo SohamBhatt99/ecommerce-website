@@ -18,3 +18,8 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
+
+function redirectToShop() {
+  // Replace 'shop.html' with the actual URL of your shop page
+  window.location.href = "shop.html";
+}
