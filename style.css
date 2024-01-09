@@ -554,9 +554,8 @@ footer .copyright {
   flex-direction: column;
   padding: 14px;
 }
-#page-header h2,
-p {
-  color: black;
+#page-header h2 {
+  color: white;
 }
 #page-header p span {
   color: red;
@@ -883,6 +882,103 @@ p {
   font-weight: 600;
   color: black;
 }
+/* cart page  */
+#cart {
+  overflow-x: auto;
+}
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+#cart table img {
+  width: 80px;
+}
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+#cart table td:nth-child(4) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px;
+}
+#cart table thead {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+#cart table tbody tr td {
+  font-size: 13px;
+}
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+#coupon .apply-btn {
+  font-size: 15px;
+  padding: 12px 20px;
+}
+#subtotal {
+  width: 50%;
+  margin-bottom: 38px;
+  border: 0.5px solid rgb(186, 183, 183);
+  padding: 30px;
+}
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#subtotal table td {
+  width: 50%;
+  border: 1px solid rgb(198, 198, 198);
+  padding: 10px;
+  font-size: 13px;
+}
 
 /* media query responsive site */
 
@@ -994,6 +1090,20 @@ p {
     width: 70%;
     margin-left: 41px;
   }
+
+  /* contact page  */
+  #form-details {
+    padding: 40px;
+  }
+  #form-details form {
+    width: 50%;
+  }
+  footer .follow i {
+    cursor: pointer;
+    color: rgb(96, 95, 95);
+    padding-right: 4px;
+    font-size: 2.5vw;
+  }
 }
 @media (max-width: 477px) {
   .section-p1 {
@@ -1101,6 +1211,7 @@ p {
   #blog .blog-details {
     width: 100%;
   }
+
   /* about page  */
   @media (max-width: 477px) {
     #about-head {
@@ -1121,5 +1232,49 @@ p {
     width: 100%;
     height: 100%;
     margin: 30px auto 0 auto;
+  }
+  /* contact page  */
+  #contact-details {
+    flex-direction: column;
+  }
+  #contact-details .details {
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  #contact-details .map {
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+  }
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+  }
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .follow i {
+    cursor: pointer;
+    color: rgb(96, 95, 95);
+    padding-right: 4px;
+    font-size: 4.5vw;
+  }
+  /* cart page  */
+  #cart-add {
+    flex-direction: column;
+  }
+  #subtotal {
+    width: 100%;
+    margin-bottom: 38px;
+    border: 0.5px solid rgb(186, 183, 183);
+    padding: 30px;
+  }
+  #coupon {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
