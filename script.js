@@ -13,3 +13,8 @@ if (close) {
     nav.classList.remove("active");
   });
 }
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+});
